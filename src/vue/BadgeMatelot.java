@@ -69,6 +69,13 @@ public class BadgeMatelot extends AnchorPane{
 		this.getChildren().add(motto);
 		return this;
 	}
+	public BadgeMatelot ajouterVaguesBleu() {
+		vagues.setImage(new Image("vue/badge/vagues.png")); // 300 x 356
+		vagues.setLayoutX(0);
+		vagues.setLayoutY(0);
+		this.getChildren().add(vagues);	
+		return this;
+	}
 }
 			
 
