@@ -15,7 +15,6 @@ public class BadgeMatelot extends AnchorPane{
 	public BadgeMatelot() {
 		this.setPrefHeight(200);
 		this.setPrefWidth(166);
-		this.setStyle("-fx-background-color: blue;");
 	}
 	
 	public BadgeMatelot ajouterEcusson() {
@@ -40,11 +39,34 @@ public class BadgeMatelot extends AnchorPane{
 		return this;
 	}
 		
-	public BadgeMatelot ajouterDauphin() {
+	public BadgeMatelot ajouterDauphinBleu() {
 		dauphin.setImage(new Image("vue/badge/dauphin-bleu.png")); // 100 x 100
 		dauphin.setLayoutX(100);
 		dauphin.setLayoutY(130);
 		this.getChildren().add(dauphin);
+		return this;
+	}
+	public BadgeMatelot ajouterDauphinRose() {
+		dauphin.setImage(new Image("vue/badge/dauphin-rose.png")); // 100 x 100
+		dauphin.setLayoutX(100);
+		dauphin.setLayoutY(130);
+		this.getChildren().add(dauphin);
+		return this;
+	}
+	public BadgeMatelot ajouterFondBleu() {
+		this.setStyle("-fx-background-color: blue;");
+		return this;
+	}
+	public BadgeMatelot ajouterFondRouge() {
+		this.setStyle("-fx-background-color: red;");
+		return this;
+	}
+	public BadgeMatelot ajouterCitation() {
+		motto.setText("Il n'y a pas d'essai");
+		motto.setLayoutX(95);
+		motto.setLayoutY(250);
+		motto.setStyle("-fx-font: 25px Tahoma;");
+		this.getChildren().add(motto);
 		return this;
 	}
 }

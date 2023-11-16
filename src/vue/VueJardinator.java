@@ -22,15 +22,11 @@ public class VueJardinator extends Vue {
 	public void activerControles()
 	{
 		super.activerControles();
-		BadgeMatelot badge = new BadgeMatelot();
-		badge.ajouterDauphin();
-		badge.ajouterEcusson();
-		badge.ajouterMotto();
-		badge.ajouterVagues();
-		
+		BadgeMatelot badge = new BadgeMatelot().ajouterFondRouge().ajouterDauphinBleu().ajouterEcusson().ajouterMotto().ajouterVagues();
+		BadgeMatelot badge2= new BadgeMatelot().ajouterFondBleu().ajouterDauphinRose().ajouterEcusson().ajouterCitation();
 
 		AnchorPane espace = (AnchorPane)lookup("#espace-travail");
-		espace.getChildren().add(badge);
+		espace.getChildren().add(badge2);
 
 
 	}
